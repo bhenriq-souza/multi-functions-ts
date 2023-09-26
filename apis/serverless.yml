@@ -1,0 +1,21 @@
+service: 'base-typescript-serverless'
+
+useDotenv: true
+
+plugins:
+  - serverless-esbuild
+  - serverless-offline
+
+package:
+  individually: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  architecture: arm64
+  stage: ${opt:stage, env:SLS_STAGE}
+  environment: ${file(./ymls/environment.yml):envs}
+
+functions: ${file(./ymls/functions.yml):functions}
+# custom: ${file(./ymls/custom.yml):custom}

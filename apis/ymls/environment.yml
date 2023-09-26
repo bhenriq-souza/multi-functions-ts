@@ -1,0 +1,3 @@
+envs:
+  SLS_STAGE: ${env:SLS_STAGE}
+  LOG_LEVEL: ${env:LOG_LEVEL}

@@ -1,0 +1,7 @@
+functions:
+  say-hello:
+    handler: src/functions/say-hello/main.default
+    events:
+      - http:
+          method: POST
+          path: say-hello/

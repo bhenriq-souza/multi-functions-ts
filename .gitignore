@@ -1,0 +1,14 @@
+apis/node_modules
+apis/.serverless
+apis/.env
+.terraformrc
+terraform.rc
+.terragrunt-cache
+*.tfstate.backup
+.terragrunt-cache
+.terraform.lock.hcl
+**/provider.tf
+**/backend.tf
+.terraform
+terragrunt_rendered.json
+auto_provider.tf

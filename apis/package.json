@@ -1,0 +1,45 @@
+{
+  "name": "basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "package": "",
+    "build": "tsc --build",
+    "dev": "ts-node ./src/index.ts",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "lint:fix": "eslint --fix 'src/**/*.{ts,tsx}'",
+    "test": "jest",
+    "debug": "node --inspect node_modules/serverless/bin/serverless offline -s local --reloadHandler"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.121",
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.2",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "esbuild": "^0.19.3",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-n": "^16.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "serverless-esbuild": "^1.48.0",
+    "serverless-offline": "^12.0.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "@middy/core": "^4.6.4",
+    "@aws-lambda-powertools/logger": "^1.13.1"
+  }
+}

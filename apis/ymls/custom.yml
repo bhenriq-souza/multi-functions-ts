@@ -1,0 +1,2 @@
+custom:
+  dotenvVars: ${file(configs/envVars.js)}
